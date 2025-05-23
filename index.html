@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoo Interactiu</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Benvingut al Zoo Interactiu!</h1>
+    <p>Explora els nostres animals i canvia com es mostren!</p>
+  </header>
+
+  <main>
+    <section class="zoo-grid">
+      <div class="animal">
+        <img src="images/quokka.jpg" alt="Quokka somrient">
+        <h2>Quokka</h2>
+        <p>Considerat l'animal més feliç del món!</p>
+      </div>
+      <div class="animal">
+        <img src="images/axolotl.jpg" alt="Axolot adorable">
+        <h2>Axolot</h2>
+        <p>Un amfibi que pot regenerar les seves extremitats!</p>
+      </div>
+      <div class="animal">
+        <img src="images/capibara.jpg" alt="Capibara relaxat">
+        <h2>Capibara</h2>
+        <p>El rosegador més gran del món i molt sociable.</p>
+      </div>
+      <div class="animal">
+        <img src="images/lemur.jpg" alt="Lèmur curiós">
+        <h2>Lèmur</h2>
+        <p>Habitant de Madagascar amb ulls molt expressius!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <button id="toggle-layout">Canvia Layout</button>
+  </footer>
+
+  <!-- Modal -->
+  <div id="animal-modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
